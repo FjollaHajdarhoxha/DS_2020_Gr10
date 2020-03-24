@@ -26,3 +26,10 @@ public class RailFence {
 		 else
 			 j=0;
 	  }
+		 for(int i=0; i<rreshta;i++) {
+		  for(int k=0;k<kolona;k++) {
+			  if(a[i][k]!=0)						  
+				  ciphertext += a[i][k];
+		
+		  }
+		  }
