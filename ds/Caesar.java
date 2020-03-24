@@ -14,3 +14,8 @@ public static String encoding (String plaintext, int key)
         }
         return ciphertext ;
     }
+     public static String decoding (String ciphertext, int key)
+    {
+        ciphertext = ciphertext.toLowerCase() ;      
+        String plaintext = "" ;
+        
