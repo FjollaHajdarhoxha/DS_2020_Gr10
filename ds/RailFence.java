@@ -33,3 +33,13 @@ public class RailFence {
 		
 		  }
 		  }
+		for(int i=0; i<rreshta;i++) {
+				  for(int k=0;k<kolona;k++) {
+				  System.out.println(a[i][k]+"\t");
+
+				  }
+
+			 System.out.println("\n");
+		   }
+		      return ciphertext;
+		  }
