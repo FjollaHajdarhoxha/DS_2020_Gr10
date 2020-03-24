@@ -18,4 +18,17 @@ public static String encoding (String plaintext, int key)
     {
         ciphertext = ciphertext.toLowerCase() ;      
         String plaintext = "" ;
+         for (int i = 0 ; i < ciphertext.length() ; i++)
+        {
+            int pozita = alfabeti.indexOf(ciphertext.charAt(i)) ;
+            int deCh = (pozita -  key) % 26 ;
+            if (deCh < 0) 
+            {
+                deCh = alfabeti.length() + deCh ;
+            }
+            char ch = alfabeti.charAt(deCh) ;
+            plaintext += ch ;  
+        }
+        return plaintext ;
+    }
         
