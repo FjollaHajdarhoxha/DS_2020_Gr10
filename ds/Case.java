@@ -25,6 +25,19 @@ public class test1 {
 			
 			 }
 	   }
+	static String alternating(String str)
+	   {
+		   char[] charArray=str.toCharArray();
+		   for(int i=0;i<charArray.length;i++)
+		   {
+			   if(i%2==0)
+			   { charArray[i]=Character.toLowerCase(charArray[i]); }
+			   else
+			   { charArray[i]=Character.toUpperCase(charArray[i]);}
+		   }
+		   str=new String(charArray);
+		   return str;
+	   }
 	
 	   static String capitalize (String str)
 	   {
@@ -56,7 +69,11 @@ public class test1 {
 		System.out.println(upper(str));
 		System.out.println(lower(str));
 		System.out.println(capitalize(str));
-		
+		System.out.println(alternating(str));
+		StringBuffer str1 = new StringBuffer("DaTaSicuRitY"); 
+       
+                inverse(str1); 
+                System.out.println(str1);
 		
 		input.close();
 
