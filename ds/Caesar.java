@@ -31,6 +31,27 @@ public static String encoding (String plaintext, int key)
         }
         return plaintext ;
     }
+    public static String bruteforce(String ciphertext) {
+    	ciphertext = ciphertext.toLowerCase() ;
+         String decryptedtext = "" ;
+         int n;
+         for(n=0;n<26;n++) {
+        	 
+         for(int i=0;i<ciphertext.length();i++)
+        	
+         {int pozita = alfabeti.indexOf(ciphertext.charAt(i)) ;             
+         int enCh = (n + pozita) % 26 ;
+         char ch = alfabeti.charAt(enCh) ;
+        
+         decryptedtext = decryptedtext + ch;
+         
+       }
+         
+         }
+         
+    
+		return decryptedtext;
+     }
           public static void main (String [] args)
     {
     if("encrypt".equals(args[0]))
