@@ -62,20 +62,18 @@ public class test1 {
 	public static void main(String[] args)
 	{ 
 		
-		Scanner input= new Scanner(System.in);
-		System.out.print("Shkruani fjaline e deshiruar: ");
-		String str=input.nextLine();
-		
-		System.out.println(upper(str));
-		System.out.println(lower(str));
-		System.out.println(capitalize(str));
-		System.out.println(alternating(str));
-		StringBuffer str1 = new StringBuffer("DaTaSicuRitY"); 
-       
-                inverse(str1); 
-                System.out.println(str1);
-		
-		input.close();
+		 if("upper".equals(args[0]))
+		       System.out.println(upper(args[1]));
+		    if("lower".equals(args[0]))
+		        System.out.println(lower(args[1]));
+		    if("inverse".equals(args[0]))
+			       inverse(args[1]);
+			    if("alternating".equals(args[0]))
+			        System.out.println(alternating(args[1]));
+			    if("capitalize".equals(args[0]))
+				       System.out.println(capitalize(args[1]));
+				  
+
 
 	}
 
