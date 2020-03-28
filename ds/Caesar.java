@@ -58,6 +58,8 @@ public static String encoding (String plaintext, int key)
        System.out.println(encoding(args[1],Integer.parseInt(args[2])));
     if("decrypt".equals(args[0]))
         System.out.println(decoding(args[1],Integer.parseInt(args[2])));
+   if("bruteforce".equals(args[0]))
+        System.out.println(bruteforce(args[1]));
     }
    
 }
