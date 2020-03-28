@@ -12,19 +12,33 @@ public class test1 {
 		   return strLower;
 	   }
 	
-	   static void inverse (StringBuffer str)
-	   {
-		   int ln=str.length();
-		   for(int i=0; i<ln; i++)
-		   {
-			   Character c= str.charAt(i);
-			   if(Character.isLowerCase(c))
-				   str.replace(i,i+1,Character.toUpperCase(c)+" ");
-			   else 
-				   str.replace(i,i+1,Character.toLowerCase(c)+" ");
-			
-			 }
-	   }
+	   static void inverse (String str) {
+	    	
+	    	
+	        char[] charArray = str.toCharArray();
+	      
+	        for(int i=0; i < charArray.length; i++){
+	            
+	            
+	            if( Character.isUpperCase(charArray[i]) ){
+	                
+	                charArray[i] = Character.toLowerCase( charArray[i] );
+	                
+	            }else if(Character.isLowerCase(charArray[i]) ){
+	                
+	                charArray[i] = Character.toUpperCase( charArray[i] );
+	            }    
+	            
+	        }
+	        
+	       
+	        str = new String(charArray);
+	        
+	        System.out.println(str);
+	    	
+	    	
+               }
+
 	static String alternating(String str)
 	   {
 		   char[] charArray=str.toCharArray();
