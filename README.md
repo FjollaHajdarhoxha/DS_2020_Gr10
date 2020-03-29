@@ -24,7 +24,7 @@ Ekzekutohet ne ate menyre qe provon te gjithe qelsat e mundeshem,dmth paraqet te
 te cyphertext-it
 Ekzekutohet me ane te argumenteve si ne foto.
 (Shiko ne file-n e shembujve te ekzekutimit)
-
+(caesar.png)
 
 
 Komanda Case 
@@ -41,6 +41,7 @@ Nenkomanda Alternating:
 Ben formatin e fjalise ne ate menyre qe fjala perbehet vazhdimisht nga nje shkronje e madhe nje e vogel.
 Keto ekzekutohen me ane te argumenteve si ne foto.
 (Shiko ne file-n e shembujve te ekzekutimit).
+(case.png)
 
 Komanda RailFence 
 
@@ -50,6 +51,7 @@ Numri i shiritave paraqet celesin e algoritmit.
 Permbahet nga dy nenkomanda:ekriptimi dhe dekriptimi.
 Keto ekzekutohen me ane te argumenteve si ne foto.
 (Shiko ne file-n e shembujve te ekzekutimit)
+(RailFence.png)
 
 Referencat:
 Geeksforgeeks.org, 
