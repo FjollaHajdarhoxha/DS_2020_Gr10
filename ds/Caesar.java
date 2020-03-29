@@ -67,12 +67,18 @@ public static String encoding (String plaintext, int key)
      }
           public static void main (String [] args)
     {
+     if(args.length == 0)
+     	System.out.println("Ju lutem jep njerin nga argumentet:"+"\n"+" encrypt" +"\n"
+                           +" decrypt" +"\n"+" bruteforce"+"\n"+
+      "Shtyp 1 per te ndalur programin");
+    if("1".equals(args[0]))
+    	System.exit(1);
     if("encrypt".equals(args[0]))
        System.out.println(encoding(args[1],Integer.parseInt(args[2])));
     if("decrypt".equals(args[0]))
         System.out.println(decoding(args[1],Integer.parseInt(args[2])));
-   if("bruteforce".equals(args[0]))
-        System.out.println(bruteforce(args[1]));
+    if("bruteforce".equals(args[0]))
+       bruteforce(args[1]);
     }
    
 }
