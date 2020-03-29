@@ -3,7 +3,7 @@ Detyra e pare ne kuader te projektit per lenden "Siguria e te dhenave".
 
 Punim nga Gr:10 nga studentet:Rina Lutolli,
                               Fjolla Hajdarhoxha,
-                              Drenusha Pirraku.
+                              Drenushë Pirraku.
 
 Nen mentorimin e prof.Arbnor Halili.
 
@@ -52,5 +52,5 @@ Keto ekzekutohen me ane te argumenteve si ne foto.
 (Shiko ne file-n e shembujve te ekzekutimit)
 
 Referencat:
-Geeksforgeeks.org
+Geeksforgeeks.org, 
 http://network-security-lab.weebly.com/uploads/7/8/6/0/7860259/ex_1_caesar_cipher.pdf?fbclid=IwAR2JTXsTQLV1YAjf3qv3fGYpulq9yWYFcu4pOJ579M-xmxmJHXVtGmkMnb4
