@@ -76,6 +76,12 @@ public class test1 {
 	public static void main(String[] args)
 	{ 
 		
+		if(args.length == 0)
+	     	System.out.println("Ju lutem jep njerin nga argumentet:"+"\n"+" upper" +"\n"
+	                           +" lower" +"\n"+" inverse"+"\n"+" alternating"+"\n"+" capitalize"+"\n"+
+	      "Shtyp 1 per te ndalur programin");
+	    if("1".equals(args[0]))
+	    	System.exit(1);
 		 if("upper".equals(args[0]))
 		       System.out.println(upper(args[1]));
 		    if("lower".equals(args[0]))
