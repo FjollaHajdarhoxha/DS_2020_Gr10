@@ -52,6 +52,19 @@ public static String encoding (String plaintext, int key)
     
 		return decryptedtext;
      }
+	   public static void bruteforce(String plaintext) {
+    	    int key = 0;
+
+    	    for (int i = 0; i < 26; i++)
+    	    {
+    	        
+    	    System.out.println("key "+key+":"+ encoding(plaintext,key));
+    	    key++;
+    	    }
+       
+           
+		
+     }
           public static void main (String [] args)
     {
     if("encrypt".equals(args[0]))
