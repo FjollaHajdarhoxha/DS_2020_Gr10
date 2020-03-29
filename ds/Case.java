@@ -1,5 +1,5 @@
-import java.util.Scanner;
-public class test1 {
+
+public class Case {
 
 	   static String upper(String str)
 	   {
