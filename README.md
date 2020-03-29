@@ -25,6 +25,8 @@ te cyphertext-it
 Ekzekutohet me ane te argumenteve si ne foto.
 (Shiko ne file-n e shembujve te ekzekutimit)
 
+
+
 Komanda Case 
 Paraqet algoritem per manipulim me tekst.Ka disa nenkomanda te cilat kryejn veprime te ndryshme.
 Nenkomanda Lower:
