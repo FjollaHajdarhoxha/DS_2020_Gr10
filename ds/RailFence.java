@@ -60,6 +60,7 @@ public class RailFence {
 		  
 	 System.out.println();
    }
+	  System.out.println();
 	  System.out.println("Teksti i enkriptuar:");
       return ciphertext;
   }
@@ -98,7 +99,7 @@ public class RailFence {
 		  }
 	
 	  j=0;
-	  System.out.println("Teksti i dekriptuar:");
+	  
 	  for(int i=0; i< kolona; i++) {
 		  if(j ==0 || j== key-1)    
 			  kontrollo = !kontrollo;
@@ -111,7 +112,26 @@ public class RailFence {
 		 else
 			 j=0;
 	  }
-	  
+	  for(int i=0; i<rreshta;i++) {
+		  for(int k=0;k<kolona;k++) {
+			  if(a[i][k]!=0)
+				  
+				  ciphertext += a[i][k];
+		
+		  }
+		  }
+	  System.out.println("Teksti i organizuar ne shirita:");
+	  for(int i=0; i<rreshta;i++) {
+		  for(int k=0;k<kolona;k++) {
+		  System.out.print(a[i][k]+"");
+		 
+		  }
+		  System.out.println();
+		 }
+	  System.out.println();
+	  System.out.println("Teksti i dekriptuar:");
 	   return deciphertext ;
 }
+   
+  
 }
