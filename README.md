@@ -41,7 +41,7 @@ Nenkomanda Alternating:
 Ben formatin e fjalise ne ate menyre qe fjala perbehet vazhdimisht nga nje shkronje e madhe nje e vogel.
 Keto ekzekutohen me ane te argumenteve si ne foto.
 (Shiko ne file-n e shembujve te ekzekutimit).
-(case.png)
+(Case.png)
 
 Komanda RailFence 
 
