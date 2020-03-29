@@ -2,6 +2,12 @@
 public class RailFence {
 
 	public static void main(String[] args) {
+		if(args.length == 0)
+	     	System.out.println("Ju lutem jep njerin nga argumentet:"+"\n"+" encrypt" +"\n"
+	                           +" decrypt" +"\n"+
+	      "Shtyp 1 per te ndalur programin");
+	    if("1".equals(args[0]))
+	    	System.exit(1);
 		 if("encrypt".equals(args[0]))
 		       System.out.println(encoding(args[1],Integer.parseInt(args[2])));
 		    if("decrypt".equals(args[0]))
