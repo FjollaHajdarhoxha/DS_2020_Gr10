@@ -48,3 +48,6 @@ Numri i shiritave paraqet celesin e algoritmit.
 Permbahet nga dy nenkomanda:ekriptimi dhe dekriptimi.
 Keto ekzekutohen me ane te argumenteve si ne foto.
 (Shiko ne file-n e shembujve te ekzekutimit)
+
+Referencat:
+Geeksforgeeks.org
