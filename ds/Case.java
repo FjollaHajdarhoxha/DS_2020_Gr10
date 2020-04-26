@@ -73,28 +73,6 @@ public class Case {
 	    
 	   
 	   
-	public static void main(String[] args)
-	{ 
-		
-		if(args.length == 0)
-	     	System.out.println("Ju lutem jep njerin nga argumentet:"+"\n"+" upper" +"\n"
-	                           +" lower" +"\n"+" inverse"+"\n"+" alternating"+"\n"+" capitalize"+"\n"+
-	      "Shtyp 1 per te ndalur programin");
-	    if("1".equals(args[0]))
-	    	System.exit(1);
-		 if("upper".equals(args[0]))
-		       System.out.println(upper(args[1]));
-		    if("lower".equals(args[0]))
-		        System.out.println(lower(args[1]));
-		    if("inverse".equals(args[0]))
-			       inverse(args[1]);
-			    if("alternating".equals(args[0]))
-			        System.out.println(alternating(args[1]));
-			    if("capitalize".equals(args[0]))
-				       System.out.println(capitalize(args[1]));
-				  
-
-
-	}
+	
 
 }
