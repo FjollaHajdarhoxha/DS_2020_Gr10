@@ -88,16 +88,6 @@ Eksporton çelësin publik ose privat të shfrytëzuesit nga direktoriumi i çel
            
            [file] - përcakton shtegun e fajllit se ku do të ruhet çelësi i eksportuar.
       
-Komanda import-key
-
-Importon çelësin publik ose privat të shfrytëzuesit nga shtegu i dhënë dhe e vendos në direktoriumin
-e çelësave.
-
-          Sintaksa: ds import-key <name> <path>
-  
-          <name> - përcakton emrin e çelësit që do të ruhet në direktoriumin keys.
-          
-          <path> - përcakton shtegun e çelësit që do të importohet.
             
 Komanda write-message
 
