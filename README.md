@@ -65,15 +65,18 @@ FIEK 2020
 Faza e dyte 
 
 Komanda create-user
+
 Krijon një çift të publik/privat të RSA me emrat <name>.xml dhe <name>.pub.xml brenda
 direktoriumit të çelësave keys.
 Sintaksa: ds create-user <name>
   
 Komanda delete-user
+
 I largon të gjithë çelësat ekzistues të shfrytëzuesit.
 Sintaksa: ds delete-user <name>
   
 Komanda export-key
+
 Eksporton çelësin publik ose privat të shfrytëzuesit nga direktoriumi i çelësave.
 Sintaksa: ds export-key <public|private> <name> [file]
           <public|private> - përcakton llojin e çelësit që eksportohet.
@@ -81,6 +84,7 @@ Sintaksa: ds export-key <public|private> <name> [file]
            [file] - përcakton shtegun e fajllit se ku do të ruhet çelësi i eksportuar.
       
 Komanda import-key
+
 Importon çelësin publik ose privat të shfrytëzuesit nga shtegu i dhënë dhe e vendos në direktoriumin
 e çelësave.
 Sintaksa: ds import-key <name> <path>
@@ -88,11 +92,13 @@ Sintaksa: ds import-key <name> <path>
           <path> - përcakton shtegun e çelësit që do të importohet.
             
 Komanda write-message
+
 E shkruan një mesazh të enkriptuar të dedikuar për një shfrytëzues.
 Sintaksa: ds write-message  <message> <name> 
            <name> - paraqet marrësin e mesazhit (çelësin publik).
            <message> - paraqet mesazhin që do të enkriptohet.
              
  Komanda read-message
+ 
 E dekripton dhe e shfaq në console mesazhin e enkriptuar.
            Sintaksa: ds read-message <encrypted-message> <name>
