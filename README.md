@@ -118,4 +118,4 @@ KUJDES!!!!
 
 *Tek komandat tek cilat kane te bejne me file,ndryshoni kodin(shkruani) pathin sipas kompjuterit tuaj
 
-*Mesazhi per enrkiptim nese ka hapesira ne mes,e vendosni brenda thojzave.
+*Mesazhi per enkriptim nese ka hapesira ne mes,e vendosni brenda thojzave.
