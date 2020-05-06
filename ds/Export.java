@@ -1,11 +1,7 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-
+import java.io.IOException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
@@ -40,7 +36,7 @@ public class Export {
 	    }else
 	    	System.out.println("Gabim: Celesi publik '"+filename+"' nuk ekziston.");
 	}
- public  void privateKey(String filename) throws Exception {
+   public  void privateKey(String filename) throws Exception {
 	
 	   File file = new File("C:\\Users\\admin\\OneDrive\\Desktop\\keys\\"+filename+".xml");
 	   
@@ -69,6 +65,72 @@ public class Export {
 			}
 		}
           }else
-          	System.out.println("Gabim: Celesi publik '"+filename+"' nuk ekziston.");
+          	System.out.println("Gabim: Celesi privat '"+filename+"' nuk ekziston.");
 	}
-}
+   public void filepublic(String filename,String file2) {
+	   FileInputStream instream = null;
+		FileOutputStream outstream = null;
+	 
+	    	try{
+	    	    File infile =new File("C:\\Users\\admin\\OneDrive\\Desktop\\keys\\"+filename+".pub.xml");
+	    	    File outfile =new File("C:\\Users\\admin\\OneDrive\\Desktop\\keys\\"+file2+".xml");
+	 
+	    	    instream = new FileInputStream(infile);
+	    	    outstream = new FileOutputStream(outfile);
+	 
+	    	    byte[] buffer = new byte[1024];
+	 
+	    	    int length;
+	    	    /*copying the contents from input stream to
+	    	     * output stream using read and write methods
+	    	     */
+	    	    while ((length = instream.read(buffer)) > 0){
+	    	    	outstream.write(buffer, 0, length);
+	    	    }
+
+	    	    //Closing the input/output file streams
+	    	    instream.close();
+	    	    outstream.close();
+
+	    	    System.out.println("Celesi publik u ruajt ne fajllin '"+file2+".xml'.");
+	 
+	    	}catch(IOException ioe){
+	    		ioe.printStackTrace();
+	    	 }
+	    }
+   public void fileprivate(String filename,String file2) {
+	   FileInputStream instream = null;
+		FileOutputStream outstream = null;
+	 
+	    	try{
+	    	    File infile =new File("C:\\Users\\admin\\OneDrive\\Desktop\\keys\\"+filename+".xml");
+	    	    File outfile =new File("C:\\Users\\admin\\OneDrive\\Desktop\\keys\\"+file2+".xml");
+	 
+	    	    instream = new FileInputStream(infile);
+	    	    outstream = new FileOutputStream(outfile);
+	 
+	    	    byte[] buffer = new byte[1024];
+	 
+	    	    int length;
+	    	    /*copying the contents from input stream to
+	    	     * output stream using read and write methods
+	    	     */
+	    	    while ((length = instream.read(buffer)) > 0){
+	    	    	outstream.write(buffer, 0, length);
+	    	    }
+
+	    	    //Closing the input/output file streams
+	    	    instream.close();
+	    	    outstream.close();
+
+	    	    System.out.println("Celesi publik u ruajt ne fajllin '"+file2+".xml'.");
+	 
+	    	}catch(IOException ioe){
+	    		ioe.printStackTrace();
+	    	 }
+	    }
+      
+   }
+	
+
+
