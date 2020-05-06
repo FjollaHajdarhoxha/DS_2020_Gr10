@@ -14,6 +14,7 @@ public class Main  {
 		Create Cr= new Create();
 		Delete D= new Delete();
 		Export E= new Export();
+		WriteRead WR = new WriteRead();
 		if(args.length == 0 || args.length > 4 || args.length<2){
 
 			System.out.println("\n\t\tProgrami pranon deri në 4 argumente!\n");
@@ -21,14 +22,18 @@ public class Main  {
 			System.exit(1);
 		}
 
-
-		if(args.length > 3) {
+		if("write-message".equals(args[0])) 
+		       System.out.println(WR.encrypt(args[1],args[2])); 
+        if("read-message".equals(args[0])) 
+	           System.out.println(WR.decrypt(args[1],args[2]));
+		
+        if(args.length > 3) {
 
 
 			String text = args[2];
 			String key = args[3];
 			int k = Integer.parseInt(key);
-
+			
 
 			if ("Caesar".equals(args[0])) {
 				if ("encrypt".equals(args[1])) {
@@ -100,25 +105,19 @@ public class Main  {
 
 		}
 		
-			String text = args[2];
+        
 			if ("export-key".equals(args[0])) {
-				if ("public".equals(args[1])) {
+				String text = args[2];
+				if ("public".equals(args[1]))
 
 					if (text.matches("^[a-zA-Z ]+")) {
 						E.publicKey(text);
 
 					} else
-						System.out.println("\n\t\tTeksti duhet të përmbajë vetëm shkronja!\n");}
-				else if ("private".equals(args[1])) {
-
-					if (text.matches("^[a-zA-Z ]+")) {
-						E.privateKey(text);
-
-					} else
 						System.out.println("\n\t\tTeksti duhet të përmbajë vetëm shkronja!\n");
 			}
+		
 
-			}
 
 
 
@@ -137,7 +136,7 @@ public class Main  {
 				else
 					System.out.println("\n\t\tTeksti duhet të përmbajë vetëm shkronja!\n");
 			}
-			else if("delete-user".equals(args[0])){
+		 else if("delete-user".equals(args[0])){
 				{
 					if(text1.matches("^[a-zA-Z0-9 ]+"))
 						try {
@@ -153,3 +152,4 @@ public class Main  {
 	    }
 	}
 }
+
