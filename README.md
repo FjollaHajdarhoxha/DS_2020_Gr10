@@ -113,5 +113,6 @@ E dekripton dhe e shfaq në console mesazhin e enkriptuar.
            Sintaksa: ds read-message <encrypted-message> <name>
 KUJDES!!!!
 
-*Tek komandat tek cilat kane te bejne me file,ndryshoni kodin(shkruani) pathin sipas kompjuterit tuaj.
+*Tek komandat tek cilat kane te bejne me file,ndryshoni kodin(shkruani) pathin sipas kompjuterit tuaj
+
 *Mesazhi per enrkiptim nese ka hapesira ne mes,e vendosni brenda thojzave.
