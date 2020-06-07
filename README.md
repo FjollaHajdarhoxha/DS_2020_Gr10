@@ -1,6 +1,6 @@
 # DS_2020_Gr10
 Projekti per lenden "Siguria e te dhenave".
-Faza e pare.
+Faza e pare, e dyte dhe e trete.
 
 Punim nga Gr:10 nga studentet:Rina Lutolli,
                               Fjolla Hajdarhoxha,
