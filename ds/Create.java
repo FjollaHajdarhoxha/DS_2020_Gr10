@@ -56,3 +56,10 @@ private static boolean checkString(String input) {
 	    return
 	      numberPresent && upperCasePresent && lowerCasePresent && specialCharacterPresent;
 	}
+private static String generateHash(String data, String algorithm, byte[] salt) throws NoSuchAlgorithmException{
+	  MessageDigest digest =MessageDigest.getInstance(algorithm);
+	  digest.reset();
+	  digest.update(salt);
+	  byte[] hash= digest.digest(data.getBytes());
+	  return bytesToStringHex(hash);
+   }
