@@ -75,3 +75,10 @@ private final static char[] hexArray= "0123456789ABCDEF".toCharArray();
 		 }
 		 return new String(hexChars);
 	 }
+ public static byte[] createSalt() {
+		 byte[] bytes = new byte[20];
+		 SecureRandom random = new SecureRandom();
+		 random.nextBytes(bytes);
+		 return bytes;
+	 }
+}
